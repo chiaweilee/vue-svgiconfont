@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    svg[data-v-svgiconfont] {
+      display: inline-block;
+      width: 1em; height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+
+    svg.flip-horizontal[data-v-svgiconfont] {
+      transform: scale(-1, 1);
+    }
+
+    svg.flip-vertical[data-v-svgiconfont] {
+      transform: scale(1, -1);
+    }
+
+    svg.spin[data-v-svgiconfont] {
+      animation: fa-spin 1s 0s infinite linear;
+    }
+
+    svg.pulse[data-v-svgiconfont] {
+      animation: fa-spin 1s infinite steps(8);
+    }
+
+    @keyframes fa-spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>
