@@ -1,7 +1,7 @@
 {
   "name": "vue-svgiconfont",
   "description": "Use Iconfont Svg in Vue",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "+v <ljw@live.jp>",
   "repository": {
     "type": "git",

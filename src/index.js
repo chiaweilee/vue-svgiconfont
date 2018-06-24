@@ -1,13 +1,13 @@
 const install = function (Vue, options) {
-  Vue.component(options.tagName || 'svg-iconfont', {
-    render: function (createElement) {
-      const className = options.className || 'iconfont'
-      const prefix = options.prefix || 'icon'
-      const classes = [className]
-      if (this.spin) classes.push('spin')
-      if (this.pulse) classes.push('pulse')
-      if (this.flipVertical) classes.push('flip-vertical')
-      if (this.flipHorizontal) classes.push('flip-horizontal')
+  const { tagName, className, prefix } = options || {}
+  Vue.component(tagName || 'svg-iconfont', {
+    functional: true,
+    render: function (createElement, { props }) {
+      const classes = [className || 'iconfont']
+      if (props.spin) classes.push('spin')
+      if (props.pulse) classes.push('pulse')
+      if (props.flipVertical) classes.push('flip-vertical')
+      if (props.flipHorizontal) classes.push('flip-horizontal')
       return createElement(
         'svg', {
           attrs: {
@@ -17,7 +17,7 @@ const install = function (Vue, options) {
           }
         }, [createElement('use', {
           attrs: {
-            'xlink:href': '#' + prefix + '-' + this.name
+            'xlink:href': '#' + (prefix || 'icon') + '-' + props.name
           }
         })]
       )

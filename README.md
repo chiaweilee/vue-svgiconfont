@@ -39,6 +39,23 @@ Vue.use(vueSvgIconfont, {
 <svg-iconfont spin />
 ```
 
+The 'spin' and others below use CSS to work, so you should import 'svgiconfont.css' first.
+Or you can write it your self, like this:
+
+```css
+ svg.spin[data-v-svgiconfont] {
+      animation: fa-spin 1s 0s infinite linear;
+ }
+ @keyframes fa-spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+```
+
 - pulse
 - flip-vertical
 - flip-horizontal
