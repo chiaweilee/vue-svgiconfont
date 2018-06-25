@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const resolve = dir => path.join(__dirname, '..', dir)
 
@@ -84,6 +85,14 @@ if (process.env.NODE_ENV === 'production') {
 		new webpack.ProvidePlugin({}),
 		new webpack.LoaderOptionsPlugin({
 			minimize: true
-		})
+		}),
+    // copy custom static assets
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../static'),
+        to: '../lib',
+        ignore: ['.*']
+      }
+    ])
 	])
 }
