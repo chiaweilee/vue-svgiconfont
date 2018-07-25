@@ -15,9 +15,10 @@ Iconfont http://iconfont.cn/
 ```vuejs
 import Vue from 'vue'
 
-<!--import svg file you downloaded from your Iconfont project-->
-import './assets/iconfont.svg'
-<!--import css file for svg, or write css yourself-->
+// iconfont assets file downloaded from iconfont.cn project
+import './assets/iconfont/iconfont.js'
+import './assets/iconfont/iconfont.css'
+
 import 'vue-svgiconfont/svgiconfont.css'
 import vueSvgIconfont from 'vue-svgiconfont'
 Vue.use(vueSvgIconfont, {
