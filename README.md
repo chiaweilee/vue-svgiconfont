@@ -29,7 +29,7 @@ Vue.use(vueSvgIconfont, {
 ```
 
 ```vue
-<svg-iconfont />
+<svg-iconfont name="vue" />
 ```
 
 ### Props
@@ -37,7 +37,7 @@ Vue.use(vueSvgIconfont, {
 - spin
 
 ```vue
-<svg-iconfont spin />
+<svg-iconfont name="vue" spin />
 ```
 
 The 'spin' and others below use CSS to work, so you should import 'svgiconfont.css' first.
