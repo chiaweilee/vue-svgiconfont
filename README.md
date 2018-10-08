@@ -1,4 +1,9 @@
 ## Vue-SvgIconfont
+
+<a href="https://npmcharts.com/compare/vue-svgiconfont?minimal=true"><img src="https://img.shields.io/npm/dm/vue-svgiconfont.svg" alt="Downloads"></a>
+<a href="https://www.npmjs.com/package/vue-svgiconfont"><img src="https://img.shields.io/npm/v/vue-svgiconfont.svg" alt="Version"></a>
+<a href="https://www.npmjs.com/package/vue-svgiconfont"><img src="https://img.shields.io/npm/l/vue-svgiconfont.svg" alt="License"></a>
+
 ---
 
 ### Install
