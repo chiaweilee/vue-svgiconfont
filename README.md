@@ -17,7 +17,7 @@ npm install vue-svgiconfont
 Iconfont http://iconfont.cn/
 
 ### Usage
-```vuejs
+```vue.js
 import Vue from 'vue'
 
 // iconfont assets file downloaded from iconfont.cn project
