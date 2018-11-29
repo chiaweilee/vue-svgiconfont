@@ -24,7 +24,7 @@ import Vue from 'vue'
 import './assets/iconfont/iconfont.js'
 import './assets/iconfont/iconfont.css'
 
-import 'vue-svgiconfont/svgiconfont.css'
+import 'vue-svgiconfont/lib/svgiconfont.css'
 import vueSvgIconfont from 'vue-svgiconfont'
 Vue.use(vueSvgIconfont, {
   tagName: 'svg-iconfont', // default for <svg-iconfont />
